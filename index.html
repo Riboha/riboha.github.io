@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seongbo Ha</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/profile.jpg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/profile.jpg" alt="Seongbo Ha" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Seongbo Ha">Seongbo Ha</h1>
+
+          <p class="title">Graduate Student</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sobo3607@g.skku.edu" class="contact-link">sobo3607@g.skku.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Github</p>
+
+              <a href="https://github.com/Riboha" class="contact-link">Riboha</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Google Scholar</p>
+
+              <a href="https://scholar.google.com/citations?user=CRghmCgAAAAJ&hl" class="contact-link">Link</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Sungkyunkwan Univ.</address>
+              <address>Suwon, Republic of Korea</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/seongboha/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/@%EB%A6%AC%EB%B3%B4%ED%95%98-n9n" target="_blank" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>CV</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h3 class="h3 article-title">About me</h3>
+        </header>
+
+        <section class="about-text">
+          <p>
+            blabla
+          </p>
+
+          <p>
+            blabla
+          </p>
+        </section>
+
+
+        <!--
+          - research interest
+        -->
+
+        <section class="research interest">
+
+          <h3 class="h3 article-title">Research Interest</h3>
+
+          <section class="about-text">
+            <p>
+              Robot Perception, SLAM, 3D Reconstruction
+            </p>
+          </section>
+
+        </section>
+
+        <!--
+          - publications
+        -->
+
+        <section class="about_publications">
+
+          <h3 class="h3 article-title">Publications</h3>
+
+            <section class="publications-container">
+              <div class="publications-gif">
+                <img src="./assets/images/gsicpslam.png" alt="GIF image">
+              </div>
+              <div class="publications-description">
+                <h4 class="h4 gs icp slam">RGBD GS-ICP SLAM</h4>
+                <section class="publications-text">
+                  <p><b>Seongbo Ha</b>, Jiung Yeon, Hyeonwoo Yu</p>
+                  <p>The 18th European Conference on Computer Vision ECCV 2024</p>
+                  <a href="https://arxiv.org/abs/2403.12550", target="_blank">[arxiv]</a>
+                  <a href="https://github.com/Lab-of-AI-and-Robotics/GS_ICP_SLAM", target="_blank">[code]</a>
+                  <a href="https://www.youtube.com/watch?v=e-bHh_uMMxE&t=15s", target="_blank">[video]</a>
+                </section>
+              </div>
+            </section>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CV
+      -->
+
+      <article class="cv" data-page="cv">
+
+        <header>
+          <h2 class="h2 article-title">CV</h2>
+        </header>
+
+
+        <!-- 
+        Education 
+        -->
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">M.S. - Ph.D combined course</h4>
+
+              <span>2024.03 - now</span>
+
+              <p class="timeline-text">
+                Sungkyunkwan University<br>
+                Intelligent Robot<br>
+                Advisor: Hyeonwoo Yu
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">B.S.</h4>
+
+              <span>2018.03 - 2024.02</span>
+
+              <p class="timeline-text">
+                University of Ulsan<br>
+                Electrical Engineering & Future Mobility
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!-- 
+        Publications 
+        -->
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Publications</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <h4 class="h4">International</h4>
+
+              <li class="timeline-item">
+                <p class="timeline-text-white">
+                  Seongbo Ha, Jiung Yeon, and Hyeonwoo Yu. "RGBD GS-ICP SLAM." arXiv preprint arXiv:2403.12550 (2024).
+                </p>
+              </li>
+
+              <li class="timeline-item"></li>
+                <p class="timeline-text-white">
+                  Jehwan Choi, <b>Seongbo Ha</b>, Youlkyeong Lee, Kanghyun Jo, 
+                  “Vehicle Tracking System in Drone Imagery with YOLOv5 and Histogram”, 
+                  Conference of the Society of Instrument and Control Engineers (SICE), 2023
+                </p>
+              </li>
+
+            <br>
+            <h4 class="h4">Domestic</h4>
+
+              <li class="timeline-item">
+                <p class="timeline-text-white">
+                  <b>Seongbo Ha</b>, Seongmin Kim, Kanghyun Jo, 
+                  “Optimal path driving system through real-time obstacle recognition and map creation in top-view images”, 
+                  The Korean Society of Industry Convergence(KSIC), 2022
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <p class="timeline-text-white">
+                  <b>Seongbo Ha</b>, Kanghyun Jo, 
+                  “Automatic Parking System using a Spatially Fixed Single Camera”, 
+                  Institute of Control, Robotics and Systems(ICROS), 2022
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <p class="timeline-text-white">
+                  Seongmin Kim, <b>Seongbo Ha</b>, Kyeongmin Yu, Kanghyun Jo, 
+                  “Target Tracking and Mapping of Tracking Routes using Drone”, 
+                  The Korean Society of Industry Convergence(KSIC), 2021
+                </p>
+              </li>
+          </ol> 
+          <!-- <section class="publications-container">
+            <div class="publications-gif">
+              <img src="./assets/images/gsicpslam.png" alt="GIF image">
+            </div>
+            <div class="publications-description">
+              <h4 class="h4 gs icp slam">RGBD GS-ICP SLAM</h4>
+              <section class="publications-text">
+                <p><b>Seongbo Ha</b>, Jiung Yeon, Hyeonwoo Yu</p>
+                <p>The 18th European Conference on Computer Vision ECCV 2024</p>
+                <a href="https://arxiv.org/abs/2403.12550", target="_blank">[arxiv]</a>
+                <a href="https://github.com/Lab-of-AI-and-Robotics/GS_ICP_SLAM", target="_blank">[code]</a>
+                <a href="https://www.youtube.com/watch?v=e-bHh_uMMxE&t=15s", target="_blank">[video]</a>
+              </section>
+            </div>
+          </section> -->
+
+        </section>
+
+        <!-- 
+        Experience
+          -->
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">3차원 지도 작성 기법 및 비지도학습을 이용한 적응형 인지기술</h4>
+
+              <span>2023.09 - 2024.02</span>
+
+              <p class="timeline-text">
+                UNIST
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
