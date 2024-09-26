@@ -1395,7 +1395,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   .about .article-title { margin-bottom: 20px;}
 
   .about-text { margin-bottom: 40px; }
-
+  .about-text a { display: inline;
+                  color: var(--white-2);
+                  font-weight: var(--fw-600)
+  }
   /* service */
 
   .service-item {
@@ -1626,6 +1629,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .publications-title {
     color: var(--white-1);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-600);
   }
 
   .publications-text {
