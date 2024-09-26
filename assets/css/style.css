@@ -827,13 +827,13 @@ main {
 
 .timeline-text {
   color: var(--light-gray);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
   line-height: 1.6;
 }
 
 .timeline-text-white {
   color: var(--white-2);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
   line-height: 1.6;
 }
 
