@@ -417,7 +417,8 @@ main {
 
 .contact-title {
   color: var(--light-gray-70);
-  font-size: var(--fs-8);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
   text-transform: uppercase;
   margin-bottom: 2px;
 }
@@ -425,6 +426,7 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-8);
+  font-weight: var(--fw-500);
 }
 
 .contact-info address { font-style: normal; }
@@ -498,9 +500,9 @@ main {
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  color: var(--white-2);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-400);
   line-height: 1.6;
 }
 
@@ -1622,15 +1624,19 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 15px;
   }
 
+  .publications-title {
+    color: var(--white-1);
+  }
+
   .publications-text {
-    color: var(--light-gray);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-300);
+    color: var(--white-1);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-400);
     /* line-height: 1.6; */
   }
 
   .publications-text a {
-    color: var(--white-1);
+    color: var(--white-2);
     display: inline;
   }
 
