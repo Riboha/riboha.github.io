@@ -1645,6 +1645,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: inline;
   }
 
+  .publications-timeline {
+    color: var(--orange-yellow-crayola);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-400);
+    /* line-height: 1.6; */
+  }
+
   /**
    * PORTFOLIO
    */
