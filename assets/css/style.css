@@ -63,9 +63,8 @@ h1 { margin: 0; font-size: clamp(34px, 3.6vw, 48px); font-weight: 600; line-heig
 .publication-list article + article { border-top: 1px solid var(--edge); }
 .publication-list article:first-of-type { padding-top: 0; }
 .publication-list article:last-of-type { padding-bottom: 0; }
-.pub-group + .pub-group { margin-top: 28px; }
-.pub-group .group-label { margin-bottom: 10px; color: var(--accent); font-size: 13px; }
-.pub-box { padding: 22px 24px; border: 1px solid var(--edge); border-radius: 12px; }
+.pub-group + .pub-group { margin-top: 44px; }
+.pub-group .group-label { margin-bottom: 18px; color: var(--accent); font-size: 13px; }
 .pub-media { grid-column: 1; display: block; aspect-ratio: 5 / 4; overflow: hidden; border: 1px solid var(--edge); border-radius: 8px; background: #fff; }
 .pub-media img { width: 100%; height: 100%; object-fit: contain; transition: transform .6s; }
 .pub-media:hover img { transform: scale(1.04); }
@@ -160,7 +159,6 @@ footer::before { content: ""; position: absolute; right: 0; left: 0; z-index: -1
   .publication-list article { grid-template-columns: 1fr; gap: 14px; }
   .pub-media, .pub-text { grid-column: 1; }
   .pub-media { max-width: 200px; }
-  .pub-box { padding: 16px 18px; }
   .cv-block-plain .cv-row { padding: 16px 18px; }
   .project-card { grid-template-columns: 1fr; gap: 14px; }
   .project-copy { grid-column: 1; }
