@@ -1,628 +1,244 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seongbo Ha</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/profile.jpg" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Seongbo Ha — Robotics researcher working on SLAM and dense 3D representation.">
+  <meta name="theme-color" content="#f5f7fa">
+  <title>Seongbo Ha — Robotics Researcher</title>
+  <link rel="icon" href="./assets/images/about/profile.jpg" type="image/jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#about">Skip to content</a>
 
-  <!--
-    - #MAIN
-  -->
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Go to top">Seongbo Ha<span>.</span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span>Menu</span><span class="menu-icon" aria-hidden="true"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#papers">Papers</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+    </nav>
+  </header>
 
-  <main>
+  <main id="top">
+    <section class="hero" id="about">
+      <figure class="portrait reveal">
+        <div class="portrait-frame"><img src="./assets/images/about/profile.jpg" alt="Portrait of Seongbo Ha" width="532" height="532"></div>
+      </figure>
 
-    <!--
-      - #SIDEBAR
-    -->
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Robotics · SLAM · 3D Representation</p>
+        <h1>Seongbo Ha</h1>
+        <p class="hero-role">M.S.–Ph.D. Combined Course<br>Sungkyunkwan University</p>
+        <p class="hero-intro">I am a graduate student in Intelligent Robotics, advised by <a href="https://bogus2000.github.io" target="_blank" rel="noreferrer">Prof. Hyeonwoo Yu</a>. Previously, I received my B.S. in Electrical Engineering with a minor in Future Mobility from the University of Ulsan. My research interests lie in <strong>SLAM</strong> and <strong>3D representation</strong>. I currently focus on dense-representation SLAM for robots operating in complex and changing environments.</p>
 
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/profile.jpg" alt="Seongbo Ha" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Seongbo Ha">Seongbo Ha</h1>
-
-          <p class="title">M.S.-Ph.D Combined Course</p>
+        <div class="hero-links" aria-label="Contact links">
+          <a href="mailto:sobo3607@g.skku.edu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
+          <a href="https://github.com/Riboha" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a>
+          <a href="https://scholar.google.com/citations?user=CRghmCgAAAAJ&amp;hl" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>Scholar</a>
+          <a href="https://www.linkedin.com/in/seongboha/" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.85 1.637-1.71 3.37-1.71 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
       </div>
+    </section>
 
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:sobo3607@g.skku.edu" class="contact-link">sobo3607@g.skku.edu</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-github"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Github</p>
-
-              <a href="https://github.com/Riboha" target="_blank" class="contact-link">Riboha</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="school-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Google Scholar</p>
-
-              <a href="https://scholar.google.com/citations?user=CRghmCgAAAAJ&hl"  target="_blank" class="contact-link">Link</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Sungkyunkwan Univ.</address>
-              <address>Suwon, Republic of Korea</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/seongboha/" target="_blank" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.youtube.com/@%EB%A6%AC%EB%B3%B4%ED%95%98-n9n" target="_blank" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
+    <section class="section cv-section" id="education" aria-labelledby="education-title">
+      <div class="section-heading reveal"><div><span class="section-number">01</span><h2 id="education-title">Education</h2></div></div>
+      <div class="cv-block cv-block-plain reveal">
+        <div class="cv-row"><time>2024 — Present</time><div><h4>Sungkyunkwan University</h4><p>M.S.–Ph.D. Combined Course, Intelligent Robotics<br>Advisor: Prof. Hyeonwoo Yu</p></div></div>
+        <div class="cv-row"><time>2018 — 2024</time><div><h4>University of Ulsan</h4><p>B.S. in Electrical Engineering<br>Minor in Future Mobility</p></div></div>
       </div>
+    </section>
 
-    </aside>
+    <section class="section" id="papers" aria-labelledby="papers-title">
+      <div class="section-heading reveal"><div><span class="section-number">02</span><h2 id="papers-title">Papers</h2></div></div>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Publications</button>
-          </li> -->
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>CV</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h3 class="h3 article-title">About me</h3>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I am a M.S.-Ph.D combined course student in Intelligent Robotics at Sungkyunkwan Univ., advised by Professor <a href="https://bogus2000.github.io", target="_blank">Hyeonwoo Yu</a>.
-            Previously, I received B.S. in Electrical Engineering and Future Mobility from University of Ulsan.
-          </p>
-        </section>
-        
-
-        <!--
-          - research interest
-        -->
-
-        <section class="research interest">
-
-          <h3 class="h3 article-title">Research Interest</h3>
-
-          <section class="about-text">
-            <p>
-              <!-- Robot Perception, SLAM, 3D Reconstruction -->
-              My research interests lie in SLAM and 3D representation, with the goal of enhancing robots' spatial understanding.
-              Currently, I'm focusing on making robust and real-time dense representation SLAM.
-            </p>
-          </section>
-
-        </section>
-
-        <!--
-          - publications
-        -->
-
-        <section class="about_publications">
-
-          <h3 class="h3 article-title">Publications</h3>
-
-            <section class="publications-container">
-              <div class="publications-gif">
-                <img src="./assets/images/gsicpslam.png" alt="GIF image">
-              </div>
-              <div class="publications-description">
-                <h4 class="publications-title">RGBD GS-ICP SLAM</h4>
-                <section class="publications-text">
-                  <p><b>Seongbo Ha</b>, Jiung Yeon, Hyeonwoo Yu</p>
-                  <p>The 18th European Conference on Computer Vision ECCV 2024</p>
-                  <a href="https://arxiv.org/abs/2403.12550", target="_blank">[arxiv]</a>
-                  <a href="https://github.com/Lab-of-AI-and-Robotics/GS_ICP_SLAM", target="_blank">[code]</a>
-                  <a href="https://www.youtube.com/watch?v=e-bHh_uMMxE&t=15s", target="_blank">[video]</a>
-                </section>
-              </div>
-            </section>
-
-        </section>
-
-        <!--
-          - publications
-        -->
-
-        <br>
-
-        <section class="about_projects">
-
-          <h3 class="h3 article-title">Projects</h3>
-
-            <section class="publications-container">
-              <div class="publications-gif">
-                <img src="./assets/images/posco.gif" alt="GIF image">
-              </div>
-
-              <div class="publications-description">
-                <h4 class="publications-title"> POSCO Industrial AI-Robot Challenge 2025 </h4>
-                <section class="publications-text">
-                  <p> 2025.07 - 2025.09 </p>
-                  <p> POSCO </p>
-                </section>
-
-              </div>
-            </section>
-
-            <section class="publications-container">
-              <div class="publications-gif">
-                <img src="./assets/images/lg.gif" alt="GIF image">
-              </div>
-
-              <div class="publications-description">
-                <h4 class="publications-title">Real-Time High-Resolution 3D RGB-D SLAM for Embedded Systems in Changing Environments</h4>
-                <section class="publications-text">
-                  <p> 2025.05 - 2026.05 </p>
-                  <p> LG </p>
-                </section>
-
-              </div>
-            </section>
-
-            <section class="publications-container">
-              <div class="publications-gif">
-                <img src="./assets/images/mobyus.gif" alt="GIF image">
-              </div>
-
-              <div class="publications-description">
-                <h4 class="publications-title">Sensor Fusion for 3D LiDAR Mapping and Robust Map-Based Localization in Dynamic Environments for Autonomous Mobile Robots</h4>
-                <section class="publications-text">
-                  <p> 2024.08 - 2025.03 </p>
-                  <p> Mobyus </p>
-                </section>
-
-              </div>
-            </section>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #CV
-      -->
-
-      <article class="cv" data-page="cv">
-
-        <header>
-          <h2 class="h2 article-title">CV</h2>
-        </header>
-
-
-        <!-- 
-        Education 
-        -->
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="school-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
+      <div class="publication-list reveal">
+        <article>
+          <div class="pub-text">
+            <h3>Real-Time LiDAR Gaussian Splatting SLAM</h3>
+            <p>Seungjun Tak, Yewon Jeon, Jaeik Hwang, SukMin Hwang, <em class="me">Seongbo Ha</em>, and Hyeonwoo Yu</p>
+            <p><em>In European Conference on Computer Vision (ECCV)</em>, 2026</p>
+            <div class="pills"><a href="https://arxiv.org/abs/2607.04127" target="_blank" rel="noreferrer">Paper</a><a href="https://lab-of-ai-and-robotics.github.io/GS-SLAM-Family/" target="_blank" rel="noreferrer">Project Page</a></div>
           </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">M.S. - Ph.D combined course</h4>
-
-              <span>2024.03 - now</span>
-
-              <p class="timeline-text">
-                Sungkyunkwan University<br>
-                Intelligent Robot<br>
-                Advisor: Hyeonwoo Yu
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">B.S.</h4>
-
-              <span>2018.03 - 2024.02</span>
-
-              <p class="timeline-text">
-                University of Ulsan<br>
-                Electrical Engineering (Major) & Future Mobility (Minor)
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <!-- 
-        Publications 
-        -->
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Publications</h3>
+        </article>
+        <article>
+          <a class="pub-media" href="https://arxiv.org/abs/2602.11714" target="_blank" rel="noreferrer" aria-label="Read GSO-SLAM on arXiv"><img src="./assets/images/papers/gso-slam.png" alt="GSO-SLAM scene optimization and reconstruction compared with MonoGS and Photo-SLAM" width="1755" height="1077" loading="lazy"></a>
+          <div class="pub-text">
+            <h3>GSO-SLAM: Bidirectionally Coupled Gaussian Splatting and Direct Visual Odometry</h3>
+            <p>Jiung Yeon*, <em class="me">Seongbo Ha</em>*, and Hyeonwoo Yu <span class="pub-note">(* equal contribution)</span></p>
+            <p><em>In IEEE Robotics and Automation Letters (RA-L)</em>, 2026</p>
+            <div class="pills"><a href="https://arxiv.org/abs/2602.11714" target="_blank" rel="noreferrer">Paper</a><a href="https://github.com/Lab-of-AI-and-Robotics/GSO-SLAM" target="_blank" rel="noreferrer">Code</a><a href="https://lab-of-ai-and-robotics.github.io/GS-SLAM-Family/" target="_blank" rel="noreferrer">Project Page</a><a href="https://www.youtube.com/watch?v=io5RmjNzkik" target="_blank" rel="noreferrer">Video</a></div>
           </div>
-
-          <ol class="timeline-list">
-            <!-- 
-            International 
-            -->
-            <h4 class="h4 title-wrapper">International</h4>
-
-              <li class="timeline-item">
-                <p class="timeline-text-white">
-                  Sibaek Lee, Kyeongsu Kang, <b>Seongbo Ha</b>, and Hyeonwoo Yu, "Bayesian NeRF: Quantifying Uncertainty With Volume Density for Neural Implicit Fields", IEEE Robotics and Automation Letters, 2025.
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <p class="timeline-text-white">
-                  <b>Seongbo Ha</b>, Jiung Yeon, and Hyeonwoo Yu, "RGBD GS-ICP SLAM", The 18th European Conference on Computer Vision ECCV, 2024.
-                </p>
-              </li>
-
-              <li class="timeline-item"></li>
-                <p class="timeline-text-white">
-                  Jehwan Choi, <b>Seongbo Ha</b>, Youlkyeong Lee, Kanghyun Jo, 
-                  “Vehicle Tracking System in Drone Imagery with YOLOv5 and Histogram”, 
-                  Conference of the Society of Instrument and Control Engineers (SICE), 2023
-                </p>
-              </li>
-
-            <br>
-            <h4 class="h4 title-wrapper">Domestic</h4>
-
-              <li class="timeline-item">
-                <p class="timeline-text-white">
-                  <b>Seongbo Ha</b>, Seongmin Kim, Kanghyun Jo, 
-                  “Optimal path driving system through real-time obstacle recognition and map creation in top-view images”, 
-                  The Korean Society of Industry Convergence(KSIC), 2022
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <p class="timeline-text-white">
-                  <b>Seongbo Ha</b>, Kanghyun Jo, 
-                  “Automatic Parking System using a Spatially Fixed Single Camera”, 
-                  Institute of Control, Robotics and Systems(ICROS), 2022
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <p class="timeline-text-white">
-                  Seongmin Kim, <b>Seongbo Ha</b>, Kyeongmin Yu, Kanghyun Jo, 
-                  “Target Tracking and Mapping of Tracking Routes using Drone”, 
-                  The Korean Society of Industry Convergence(KSIC), 2021
-                </p>
-              </li>
-          </ol> 
-          <!-- <section class="publications-container">
-            <div class="publications-gif">
-              <img src="./assets/images/gsicpslam.png" alt="GIF image">
-            </div>
-            <div class="publications-description">
-              <h4 class="h4 gs icp slam">RGBD GS-ICP SLAM</h4>
-              <section class="publications-text">
-                <p><b>Seongbo Ha</b>, Jiung Yeon, Hyeonwoo Yu</p>
-                <p>The 18th European Conference on Computer Vision ECCV 2024</p>
-                <a href="https://arxiv.org/abs/2403.12550", target="_blank">[arxiv]</a>
-                <a href="https://github.com/Lab-of-AI-and-Robotics/GS_ICP_SLAM", target="_blank">[code]</a>
-                <a href="https://www.youtube.com/watch?v=e-bHh_uMMxE&t=15s", target="_blank">[video]</a>
-              </section>
-            </div>
-          </section> -->
-
-        </section>
-
-        <!-- 
-        Experience
-          -->
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
+        </article>
+        <article>
+          <div class="pub-text">
+            <h3>LangGS-SLAM: Real-Time Language-Feature Gaussian Splatting SLAM</h3>
+            <p><em class="me">Seongbo Ha</em>, Sibaek Lee, Kyeongsu Kang, Joonyeol Choi, Seungjun Tak, and Hyeonwoo Yu</p>
+            <p><em>arXiv preprint arXiv:2602.06991</em>, 2026</p>
+            <div class="pills"><a href="https://arxiv.org/abs/2602.06991" target="_blank" rel="noreferrer">Paper</a></div>
           </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">AI Semiconductor Innovation Center (Sungkyunkwan University)</h4>
-
-              <span> 2025.07 - 2030.12 </span>
-
-              <p class="timeline-text">
-                IITP grant funded by the Korea government (MSIT)
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Real-Time High-Resolution 3D RGB-D SLAM for Embedded Systems in Changing Environments</h4>
-
-              <span> 2025.05 - 2026.05 </span>
-
-              <p class="timeline-text">
-                LG
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Development of Robotic Technology for Grasping and Manipulating Challenging Thin non-rigid Objects in Unstructured Environments Through Multi-Modal 3D Perception and Task Planning Learned from Demonstration and Manuals for battery pack recycling</h4>
-
-              <span> 2024.12 - 2027.11 </span>
-
-              <p class="timeline-text">
-                Ministry of Trade, Industry, and Energy
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Development and Demonstration of Unmanned Autonomous Operation Technology Based on Field-Use Visualization Sensors and 6-Axis Rotational Angle Sensors</h4>
-
-              <span> 2024.10 - 2028.12 </span>
-
-              <p class="timeline-text">
-                Ministry of Trade, Industry, and Energy
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Sensor Fusion for 3D LiDAR Mapping and Robust Map-Based Localization in Dynamic Environments for Autonomous Mobile Robots</h4>
-
-              <span> 2024.08 - 2025.03 </span>
-
-              <p class="timeline-text">
-                Mobyus
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Spatial and Task Generalization Framework for Hardware Platform-Agnostic Embodied AI</h4>
-
-              <span>2024.04 - 2027.03</span>
-
-              <p class="timeline-text">
-                National Research Foundation of Korea (NRF)
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <!-- 
-        Awards and Honors 
-        -->
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="trophy-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Awards and Honors</h3>
+        </article>
+        <article>
+          <div class="pub-text">
+            <h3>RUSH: Recursive and Scalable 3D Coarse to Fine Path Planning</h3>
+            <p>Hwajung Lee, Daegeol Ko, Jaehyuk Hur, Junwon Lee, <em class="me">Seongbo Ha</em>, Jong Hwan Ko, and Hyeonwoo Yu</p>
+            <p><em>In IEEE Robotics and Automation Letters (RA-L)</em>, 2026</p>
+            <div class="pills"><a href="https://ieeexplore.ieee.org/document/11347481" target="_blank" rel="noreferrer">Paper</a><a href="https://youtu.be/zLycyMxmNw0" target="_blank" rel="noreferrer">Video</a></div>
           </div>
+        </article>
+        <article>
+          <div class="pub-text">
+            <h3>LEGO-SLAM: Language-Embedded Gaussian Optimization SLAM</h3>
+            <p>Sibaek Lee, <em class="me">Seongbo Ha</em>, Kyeongsu Kang, Joonyeol Choi, Seungjun Tak, and Hyeonwoo Yu</p>
+            <p><em>arXiv preprint arXiv:2511.16144</em>, 2025</p>
+            <div class="pills"><a href="https://arxiv.org/abs/2511.16144" target="_blank" rel="noreferrer">Paper</a><a href="https://github.com/Lab-of-AI-and-Robotics/LEGO-SLAM" target="_blank" rel="noreferrer">Code</a><a href="https://lab-of-ai-and-robotics.github.io/LEGO-SLAM/" target="_blank" rel="noreferrer">Project Page</a></div>
+          </div>
+        </article>
+        <article>
+          <div class="pub-text">
+            <h3>Memory-Efficient Voxelized Renderable Neural 3D Spatial Representation for Vision-Based Robotics</h3>
+            <p>Howoong Jun, <em class="me">Seongbo Ha</em>, Jaewon Lee, Hyeonwoo Yu, and Songhwai Oh</p>
+            <p><em>In IEEE Robotics and Automation Letters (RA-L)</em>, 2025</p>
+            <div class="pills"><a href="https://doi.org/10.1109/LRA.2025.3632118" target="_blank" rel="noreferrer">Paper</a><a href="https://www.youtube.com/watch?v=kTzwtivYqSc" target="_blank" rel="noreferrer">Video</a></div>
+          </div>
+        </article>
+        <article>
+          <div class="pub-text">
+            <h3>Spatial Coordinate Transformation for 3D Neural Implicit Mapping</h3>
+            <p>Kyeongsu Kang, <em class="me">Seongbo Ha</em>, Sibaek Lee, and Hyeonwoo Yu</p>
+            <p><em>In IEEE Robotics and Automation Letters (RA-L)</em>, 2025</p>
+            <div class="pills"><a href="https://doi.org/10.1109/LRA.2025.3595031" target="_blank" rel="noreferrer">Paper</a></div>
+          </div>
+        </article>
+        <article>
+          <a class="pub-media" href="https://arxiv.org/abs/2404.06727" target="_blank" rel="noreferrer" aria-label="Read Bayesian NeRF on arXiv"><img src="./assets/images/papers/bayesian_nerf.png" alt="Bayesian NeRF reconstruction compared with ground truth and baseline" width="1378" height="478" loading="lazy"></a>
+          <div class="pub-text">
+            <h3>Bayesian NeRF: Quantifying Uncertainty With Volume Density for Neural Implicit Fields</h3>
+            <p>Sibaek Lee, Kyeongsu Kang, <em class="me">Seongbo Ha</em>, and Hyeonwoo Yu</p>
+            <p><em>In IEEE Robotics and Automation Letters (RA-L)</em>, 2025</p>
+            <div class="pills"><a href="https://arxiv.org/abs/2404.06727" target="_blank" rel="noreferrer">Paper</a></div>
+          </div>
+        </article>
+        <article>
+          <a class="pub-media" href="https://arxiv.org/abs/2403.12550" target="_blank" rel="noreferrer" aria-label="Read RGBD GS-ICP SLAM on arXiv"><img src="./assets/images/papers/gsicpslam.png" alt="RGBD GS-ICP SLAM reconstruction visualization" width="320" height="256"></a>
+          <div class="pub-text">
+            <h3>RGBD GS-ICP SLAM</h3>
+            <p><em class="me">Seongbo Ha</em>, Jiung Yeon, and Hyeonwoo Yu</p>
+            <p><em>In European Conference on Computer Vision (ECCV)</em>, 2024</p>
+            <div class="pills"><a href="https://arxiv.org/abs/2403.12550" target="_blank" rel="noreferrer">Paper</a><a href="https://github.com/Lab-of-AI-and-Robotics/GS_ICP_SLAM" target="_blank" rel="noreferrer">Code</a><a href="https://lab-of-ai-and-robotics.github.io/GS-SLAM-Family/" target="_blank" rel="noreferrer">Project Page</a><a href="https://www.youtube.com/watch?v=e-bHh_uMMxE&amp;t=15s" target="_blank" rel="noreferrer">Video</a></div>
+            <p class="pub-summary">A dense RGB-D SLAM system combining Gaussian Splatting with ICP for high-quality, real-time mapping.</p>
+          </div>
+        </article>
+        <article>
+          <div class="pub-text">
+            <h3>Vehicle Tracking System in Drone Imagery with YOLOv5 and Histogram</h3>
+            <p>Jehwan Choi, <em class="me">Seongbo Ha</em>, Youlkyeong Lee, and Kanghyun Jo</p>
+            <p><em>In 62nd Annual Conference of the Society of Instrument and Control Engineers (SICE)</em>, 2023</p>
+          </div>
+        </article>
+        <article>
+          <div class="pub-text">
+            <h3>Optimal Path Driving Through Real-Time Obstacle Recognition and Map Creation in Top-View Images</h3>
+            <p><em class="me">Seongbo Ha</em>, Seongmin Kim, and Kanghyun Jo</p>
+            <p><em>In KSIC</em>, 2022</p>
+          </div>
+        </article>
+        <article>
+          <div class="pub-text">
+            <h3>Automatic Parking System Using a Spatially Fixed Single Camera</h3>
+            <p><em class="me">Seongbo Ha</em> and Kanghyun Jo</p>
+            <p><em>In ICROS</em>, 2022</p>
+          </div>
+        </article>
+        <article>
+          <div class="pub-text">
+            <h3>Target Tracking and Mapping of Tracking Routes Using Drone</h3>
+            <p>Seongmin Kim, <em class="me">Seongbo Ha</em>, Kyeongmin Yu, and Kanghyun Jo</p>
+            <p><em>In KSIC</em>, 2021</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-          <ol class="timeline-list">
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading reveal"><div><span class="section-number">03</span><h2 id="projects-title">Projects</h2></div></div>
+      <div class="project-group">
+        <h3 class="group-label">Challenges</h3>
+        <div class="project-list">
+          <article class="project-card reveal">
+            <div class="project-media"><img src="./assets/images/projects/posco.gif" alt="POSCO industrial robot challenge demonstration" loading="lazy"></div>
+            <div class="project-copy"><div class="meta"><span>POSCO</span><time>Jul — Sep 2025</time></div><h4>POSCO Industrial AI-Robot Challenge</h4><p>First-prize-winning robotic system developed for an industrial AI challenge.</p><div class="pills"><a href="https://daegeolko.github.io/Posco_skku/" target="_blank" rel="noreferrer">Project Page</a></div></div>
+          </article>
+        </div>
+      </div>
+      <div class="project-group">
+        <h3 class="group-label">Industry Collaborations</h3>
+        <div class="project-list">
+          <article class="project-card reveal">
+            <div class="project-media"><img src="./assets/images/projects/hyundai-wia.gif" alt="RGB-D camera localization for an automated parking robot" loading="lazy"></div>
+            <div class="project-copy"><div class="meta"><span>Hyundai WIA</span><time>Aug 2026 — Jan 2027</time></div><h4>AMR Localization for Automated Parking using an RGB-D Camera</h4></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-media"><img src="./assets/images/projects/lg-hs-humanoid-amr.png" alt="3D reconstruction and localization for humanoid robots and low-profile AMRs" loading="lazy"></div>
+            <div class="project-copy"><div class="meta"><span>LG Electronics HS</span><time>Jul 2026 — Apr 2027</time></div><h4>Real-Time 3D Reconstruction and Localization for Humanoid Robots and Low-Profile AMRs</h4></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-media"><img src="./assets/images/projects/lg-pri.gif" alt="SLAM drone monitoring carts" loading="lazy"></div>
+            <div class="project-copy"><div class="meta"><span>LG PRI</span><time>Apr — Dec 2026</time></div><h4>Development of a SLAM-Drone-Based Cart Monitoring System</h4></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-media"><img src="./assets/images/projects/samsung-gtr.png" alt="Physical AI-based autonomous navigation for AMRs" loading="lazy"></div>
+            <div class="project-copy"><div class="meta"><span>Samsung Electronics GTR</span><time>Jan — Nov 2026</time></div><h4>Physical AI–Based Integrated Autonomous Navigation for AMRs</h4></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-media"><img src="./assets/images/projects/lg-embedded-slam.gif" alt="Real-time RGB-D SLAM visualization" loading="lazy"></div>
+            <div class="project-copy"><div class="meta"><span>LG Electronics</span><time>May 2025 — May 2026</time></div><h4>Real-Time High-Resolution 3D RGB-D SLAM</h4><p>Dense SLAM for embedded systems operating in changing environments.</p></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-media"><img src="./assets/images/projects/mobyus.gif" alt="LiDAR mapping and localization visualization" loading="lazy"></div>
+            <div class="project-copy"><div class="meta"><span>Mobyus</span><time>Aug 2024 — Mar 2025</time></div><h4>3D LiDAR Mapping &amp; Robust Localization</h4><p>Sensor fusion for map-based localization of autonomous mobile robots in dynamic environments.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-            <li class="timeline-item">
+    <section class="section cv-section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading reveal"><div><span class="section-number">04</span><h2 id="experience-title">Experience</h2></div></div>
+      <div class="cv-block reveal">
+        <h3>Research Projects</h3>
+        <div class="cv-row"><time>2025 — 2030</time><div><h4>AI Semiconductor Innovation Center</h4><p>Sungkyunkwan University · IITP grant funded by MSIT</p></div></div>
+        <div class="cv-row"><time>2024 — 2027</time><div><h4>Multi-Modal 3D Perception &amp; Task Planning</h4><p>Robotic manipulation of thin, non-rigid objects for battery-pack recycling · MOTIE</p></div></div>
+        <div class="cv-row"><time>2024 — 2028</time><div><h4>Unmanned Autonomous Operation Technology</h4><p>Field-use visualization and 6-axis rotational angle sensing · MOTIE</p></div></div>
+        <div class="cv-row"><time>2024 — 2027</time><div><h4>Platform-Agnostic Embodied AI</h4><p>Spatial and task generalization framework · National Research Foundation of Korea</p></div></div>
+      </div>
+    </section>
 
-              <p class="timeline-text-white"> POSCO Industrial AI-Robot Challenge 2025 </h4>
-              <p class="timeline-text"> First Prize </p>
-              <span> 2025.09 </span>
-              
-            </li>
-
-            <li class="timeline-item">
-
-              <p class="timeline-text-white"> Institute of Embedded Engineering of Korea (IEMEK) </h4>
-              <p class="timeline-text"> Invited Talk </p>
-              <span> 2024.11 </span>
-              
-            </li>
-
-            <li class="timeline-item">
-
-              <p class="timeline-text-white"> Yangyoung Foundation </h4>
-              <p class="timeline-text"> Full scholarship </p>
-              <span>2022 - 2023</span>
-              
-            </li>
-
-            <li class="timeline-item">
-              <p class="timeline-text-white"> 2022 한국산업융합학회 추계 학술대회 (한국산업융합학회) </h4>
-              <p class="timeline-text"> 우수 논문발표상 </p>
-              <span>2022</span>
-            </li>
-
-            <li class="timeline-item">
-              <p class="timeline-text-white"> 울산대학교 캡스톤디자인 대회 (울산대학교) </h4>
-              <p class="timeline-text"> First Prize </p>
-              <span>2022</span>
-            </li>
-
-            <li class="timeline-item">
-              <p class="timeline-text-white"> U-챌린지 페스티벌 (BTS 실전문제연구) (UNIST, 울산대학교)</h4>
-              <p class="timeline-text"> Second Prize </p>
-              <span>2021</span>
-            </li>
-
-            <li class="timeline-item">
-              <p class="timeline-text-white"> 2021 한국산업융합학회 추계 학술대회 (한국산업융합학회) </h4>
-              <p class="timeline-text"> 우수 논문발표상 </p>
-              <span>2021</span>
-            </li>
-
-          </ol>
-
-        </section>
-
-
-      </article>
-
-    </div>
-
+    <section class="section awards" id="awards" aria-labelledby="awards-title">
+      <div class="section-heading reveal"><div><span class="section-number">05</span><h2 id="awards-title">Awards &amp; honors</h2></div></div>
+      <div class="award-list reveal">
+        <article><time>2025.09</time><h3>POSCO Industrial AI-Robot Challenge</h3><p>First Prize</p></article>
+        <article><time>2024.11</time><h3>Institute of Embedded Engineering of Korea</h3><p>Invited Talk</p></article>
+        <article><time>2022 — 2023</time><h3>Yangyoung Foundation</h3><p>Full Scholarship</p></article>
+        <article><time>2022</time><h3>University of Ulsan Capstone Design Competition</h3><p>First Prize</p></article>
+        <article><time>2021</time><h3>U-Challenge Festival</h3><p>Second Prize</p></article>
+      </div>
+    </section>
   </main>
 
-  <!--
-    - custom js link
-  -->
+  <footer>
+    <div><a href="mailto:sobo3607@g.skku.edu">sobo3607@g.skku.edu ↗</a></div>
+    <div class="footer-meta"><span>Seongbo Ha</span><span>© <span id="year">2026</span></span><a href="#top">Back to top ↑</a></div>
+  </footer>
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
-
 </html>
