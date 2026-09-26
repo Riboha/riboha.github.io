@@ -32,12 +32,14 @@ button { color: inherit; font: inherit; }
 
 main, footer { max-width: var(--page-width); margin: auto; padding-right: 24px; padding-left: 24px; }
 .hero { display: grid; grid-template-columns: minmax(150px, 200px) minmax(0, 1fr); gap: clamp(40px, 5vw, 64px); align-items: center; padding: 88px 0 72px; }
-.eyebrow, .meta, .cv-row time, .award-list time, .footer-meta { font-family: var(--mono); text-transform: uppercase; letter-spacing: .06em; }
+.eyebrow, .meta, .cv-row .date, .award-list .date, .footer-meta { font-family: var(--mono); text-transform: uppercase; letter-spacing: .06em; }
 .eyebrow { margin: 0 0 32px; color: var(--accent); font-size: 12px; font-weight: 500; }
 h1 { margin: 0; font-size: clamp(34px, 3.6vw, 48px); font-weight: 600; line-height: 1.05; letter-spacing: -.05em; }
 .name-ko { margin-left: .15em; color: var(--muted); font-family: "Manrope", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; font-size: .45em; font-weight: 500; letter-spacing: 0; white-space: nowrap; }
 .hero-role { margin: 22px 0 0; font-size: 17px; font-weight: 600; line-height: 1.45; }
 .hero-intro { max-width: 720px; margin: 26px 0 0; color: var(--muted); font-size: 16px; line-height: 1.75; }
+.hero-intro p { margin: 0; }
+.hero-intro p + p { margin-top: 14px; }
 .hero-intro a { color: var(--ink); border-bottom: 1px solid var(--ink); }
 .hero-intro strong { color: var(--ink); font-weight: 600; }
 .hero-links { display: flex; margin-top: 34px; flex-wrap: wrap; gap: 10px; }
@@ -68,6 +70,7 @@ h1 { margin: 0; font-size: clamp(34px, 3.6vw, 48px); font-weight: 600; line-heig
 .pub-media { grid-column: 1; display: block; aspect-ratio: 5 / 4; overflow: hidden; border: 1px solid var(--edge); border-radius: 8px; background: #fff; }
 .pub-media img { width: 100%; height: 100%; object-fit: contain; transition: transform .6s; }
 .pub-media:hover img { transform: scale(1.04); }
+.publication-list article:not(:has(.pub-media))::before { content: "Coming soon"; grid-column: 1; display: grid; place-items: center; aspect-ratio: 5 / 4; padding: 12px; border: 1px solid var(--edge); border-radius: 8px; background: #fff; color: #9aa4b2; font-family: var(--mono); font-size: 10px; letter-spacing: .06em; text-align: center; text-transform: uppercase; }
 .pub-text { grid-column: 2; }
 .publication-list h4 { max-width: 850px; margin: 0 0 4px; font-size: 16px; font-weight: 600; line-height: 1.45; letter-spacing: -.01em; }
 .publication-list p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
@@ -87,8 +90,7 @@ h1 { margin: 0; font-size: clamp(34px, 3.6vw, 48px); font-weight: 600; line-heig
 .group-label { margin: 0 0 14px; font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; }
 .project-list { display: grid; gap: 12px; }
 .project-card { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 28px; align-items: start; padding: 16px; border: 1px solid var(--edge); border-radius: 12px; }
-.cv-block-plain .cv-row { transition: border-color .2s, box-shadow .2s; }
-.project-card.reveal { transition: opacity .7s ease, transform .7s ease, border-color .2s, box-shadow .2s; }
+.project-card, .cv-block-plain .cv-row { transition: border-color .2s, box-shadow .2s; }
 .project-card:hover, .cv-block-plain .cv-row:hover { border-color: rgba(29,78,216,.45); box-shadow: 0 6px 18px rgba(17,24,39,.07); }
 .project-media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; border-radius: 8px; background: #dde3eb; }
 .project-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .65s; }
@@ -106,22 +108,19 @@ h1 { margin: 0; font-size: clamp(34px, 3.6vw, 48px); font-weight: 600; line-heig
 .cv-block-plain .cv-row { grid-column: 1; padding: 18px 22px; border: 1px solid var(--edge); border-radius: 12px; }
 .cv-block-plain .cv-row h4 { font-size: 16px; font-weight: 600; }
 .cv-row { grid-column: 2; display: grid; grid-template-columns: 150px 1fr; gap: 30px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--line); }
-.cv-row time { color: var(--muted); font-size: 10px; }
+.cv-row .date { color: var(--muted); font-size: 10px; }
 .cv-row h4 { margin: 0 0 2px; font-size: 15px; font-weight: 500; }
 .cv-row p { margin: 0; color: var(--muted); font-size: 14px; }
 .cv-row p a { color: var(--ink); border-bottom: 1px solid var(--line); transition: color .2s, border-color .2s; }
 .cv-row p a:hover { color: var(--accent); border-color: var(--accent); }.award-list { border-top: 1px solid var(--line); }
 .award-list article { display: grid; grid-template-columns: 150px 1fr auto; gap: 30px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--line); }
-.award-list time { color: var(--muted); font-size: 10px; }
+.award-list .date { color: var(--muted); font-size: 10px; }
 .award-list h3 { margin: 0; font-size: 15px; font-weight: 500; }
 .award-list p { margin: 0; color: var(--muted); font-size: 14px; }
 
 footer { padding-top: 30px; padding-bottom: 30px; background: var(--ink); color: var(--paper); }
 footer::before { content: ""; position: absolute; right: 0; left: 0; z-index: -1; height: 100%; margin-top: -30px; background: var(--ink); }
 .footer-meta { display: flex; justify-content: space-between; color: #9ca3af; font-size: 10px; }
-
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
-.reveal.visible { opacity: 1; transform: none; }
 
 @media (max-width: 800px) {
   .site-header { height: 64px; padding: 0 20px; }
@@ -159,6 +158,7 @@ footer::before { content: ""; position: absolute; right: 0; left: 0; z-index: -1
   .publication-list article { grid-template-columns: 1fr; gap: 14px; }
   .pub-media, .pub-text { grid-column: 1; }
   .pub-media { max-width: 200px; }
+  .publication-list article:not(:has(.pub-media))::before { display: none; }
   .cv-block-plain .cv-row { padding: 16px 18px; }
   .project-card { grid-template-columns: 1fr; gap: 14px; }
   .project-copy { grid-column: 1; }
@@ -172,5 +172,4 @@ footer::before { content: ""; position: absolute; right: 0; left: 0; z-index: -1
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
-  .reveal { opacity: 1; transform: none; }
 }
